@@ -12,5 +12,5 @@ def safe_divide():
     except ValueError:
         print("Error: Please enter valid numbers.")
 
-# Call the function
+
 safe_divide()
