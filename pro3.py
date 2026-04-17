@@ -1,4 +1,3 @@
-# Function to write (append) a message to log.txt
 def write_log(message):
     try:
         with open("log.txt", "a") as file:
@@ -8,7 +7,6 @@ def write_log(message):
         print("Error writing to log file:", e)
 
 
-# Function to read and print all logs
 def read_logs():
     try:
         with open("log.txt", "r") as file:
@@ -19,7 +17,6 @@ def read_logs():
         print("No log file found.")
 
 
-# Menu for user interaction
 def log_menu():
     while True:
         print("\n--- Log Menu ---")
@@ -37,12 +34,11 @@ def log_menu():
             read_logs()
 
         elif choice == "3":
-            print("Goodbye 👋")
+            print(" Exit")
             break
 
         else:
             print("Invalid choice. Try again.")
 
 
-# Run the program
 log_menu()
